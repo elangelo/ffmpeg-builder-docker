@@ -38,8 +38,6 @@ RUN apt install -y \
 
 RUN apt install -y vim
 
-RUN updatedb
-
 RUN mkdir compile
 
 #ADD http://zeranoe.com/scripts/mingw_w64_build/mingw-w64-build-3.6.7 /home/compile-user/source/mingw-w64-build-3.6.7

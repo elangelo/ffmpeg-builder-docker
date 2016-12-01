@@ -13,21 +13,12 @@ RUN apt install -y \
 	git \
 	yasm \
 	subversion \
-	cmake
-
-RUN apt install -y \ 
+	cmake \
 	xz-utils \
 	g++ \
 	flex \
 	m4 \
 	bison \
-	mlocate \
-        mingw-w64 \
-	mingw-w64-x86-64-dev \
-	mingw-w64-tools \
-	g++-multilib 
-
-RUN apt install -y \
 	autoconf \
 	automake \
 	build-essential \
@@ -38,9 +29,7 @@ RUN apt install -y \
 	libtool \
 	libva-dev \
 	libvorbis-dev \
-	pkg-config
-
-RUN apt install -y \
+	pkg-config \
 	nasm \
 	unzip \
 	mercurial \

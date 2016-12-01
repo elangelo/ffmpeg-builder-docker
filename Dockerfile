@@ -60,9 +60,10 @@ RUN mkdir compile
 VOLUME /result
 WORKDIR compile
 
-#RUN git clone https://github.com/elangelo/ffmpeg-builder.git
 #RUN git clone https://github.com/rdp/ffmpeg-windows-build-helpers
-RUN git clone https://github.com/DeadSix27/ffmpeg-windows-build-helpers
-RUN chmod +x /compile/ffmpeg-windows-build-helpers/cross_compile_ffmpeg.sh
+#RUN git clone https://github.com/DeadSix27/ffmpeg-windows-build-helpers
 
-CMD [ "/bin/bash" ]
+COPY entrypoint.sh /compile
+RUN chmod +x /compile/entrypoint.sh
+
+CMD [ "/compile/entrypoint.sh" ]

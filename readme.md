@@ -10,6 +10,6 @@ Output of the build is copied to the `VOLUME` /result. If you want to keep the r
 
 After running the entrypoint script the container returns to the shell so you interact with the build before the container quits.
 
-I run this with `--rm` to remove the container after build as i'm no longer interested in the build. Obiously this is optional.
+I run this with `--rm` to remove the container after build as i'm no longer interested in the build. Obviously this is optional.
 
 Container is based on ubuntu and quite some stuff is installed as I also use it to try patches on ffmpeg (requires me to edit the code with vim and so on).
